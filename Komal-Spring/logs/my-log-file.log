@@ -1,0 +1,33 @@
+2020-04-04 00:49:07.321  INFO 3480 --- [main] c.o.KomalSpring.KomalSpringApplication   : Starting KomalSpringApplication on HP with PID 3480 (F:\java\Komal-Spring\build\classes\java\main started by KUSHAL in F:\java\Komal-Spring)
+2020-04-04 00:49:07.337  INFO 3480 --- [main] c.o.KomalSpring.KomalSpringApplication   : No active profile set, falling back to default profiles: default
+2020-04-04 00:49:16.379  INFO 3480 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-04 00:49:16.471  INFO 3480 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42ms. Found 0 JPA repository interfaces.
+2020-04-04 00:49:21.105  INFO 3480 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-04 00:49:21.165  INFO 3480 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-04 00:49:21.169  INFO 3480 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-04 00:49:23.307  INFO 3480 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-04 00:49:23.307  INFO 3480 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 15327 ms
+2020-04-04 00:49:23.574  WARN 3480 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2020-04-04 00:49:23.582  INFO 3480 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-04-04 00:49:23.602  INFO 3480 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-04 00:49:23.606 ERROR 3480 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
